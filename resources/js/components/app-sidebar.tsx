@@ -13,6 +13,26 @@ const mainNavItems: NavItem[] = [
         href: '/dashboard',
         icon: LayoutGrid,
     },
+    {
+        title: 'Autores',
+        href: '/autors',
+        icon: LayoutGrid,
+    },
+    {
+        title: 'Categorias',
+        href: '/categorias',
+        icon: LayoutGrid,
+    },
+    {
+        title: 'Personas',
+        href: '/personas',
+        icon: LayoutGrid,
+    },
+    {
+        title: 'Ubicaciones',
+        href: '/ubicacions',
+        icon: LayoutGrid,
+    },
 ];
 
 const footerNavItems: NavItem[] = [
