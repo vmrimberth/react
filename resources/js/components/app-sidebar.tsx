@@ -33,6 +33,16 @@ const mainNavItems: NavItem[] = [
         href: '/ubicacions',
         icon: LayoutGrid,
     },
+    {
+        title: 'Libros',
+        href: '/libros',
+        icon: LayoutGrid,
+    },
+    {
+        title: 'Prestamo Libro',
+        href: '/prestamoLibros',
+        icon: LayoutGrid,
+    },
 ];
 
 const footerNavItems: NavItem[] = [

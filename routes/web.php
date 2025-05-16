@@ -6,6 +6,8 @@ use App\Http\Controllers\AutorController;
 use App\Http\Controllers\CategoriaController;
 use App\Http\Controllers\PersonaController;
 use App\Http\Controllers\UbicacionController;
+use App\Http\Controllers\LibroController;
+use App\Http\Controllers\PrestamoLibroController;
 
 Route::get('/', function () {
     return Inertia::render('welcome');
@@ -39,6 +41,18 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/ubicacions/{id}', [UbicacionController::class, 'show']); // Obtener uno
     Route::put('/ubicacions/{id}', [UbicacionController::class, 'update']); // Actualizar
     Route::delete('/autubicacionsors/{id}', [UbicacionController::class, 'destroy']); // Eliminar
+
+    Route::get('/libros', [LibroController::class, 'index']); // Obtener todos
+    Route::post('/libros', [LibroController::class, 'store']); // Crear nuevo
+    Route::get('/libros/{id}', [LibroController::class, 'show']); // Obtener uno
+    Route::put('/libros/{id}', [LibroController::class, 'update']); // Actualizar
+    Route::delete('/libros/{id}', [LibroController::class, 'destroy']); // Eliminar
+
+    Route::get('/prestamoLibros', [PrestamoLibroController::class, 'index']); // Obtener todos
+    Route::post('/prestamoLibros', [PrestamoLibroController::class, 'store']); // Crear nuevo
+    Route::get('/prestamoLibros/{id}', [PrestamoLibroController::class, 'show']); // Obtener uno
+    Route::put('/prestamoLibros/{id}', [PrestamoLibroController::class, 'update']); // Actualizar
+    Route::delete('/prestamoLibros/{id}', [PrestamoLibroController::class, 'destroy']); // Eliminar
 
 });
 
