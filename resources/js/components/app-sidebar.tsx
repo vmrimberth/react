@@ -4,7 +4,7 @@ import { NavUser } from '@/components/nav-user';
 import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@/components/ui/sidebar';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
-import { BookOpen, Folder, LayoutGrid } from 'lucide-react';
+import { BookMarked, BookOpen, Boxes, Contact, Folder, LayoutGrid, LibrarySquare, Locate, Sparkles } from 'lucide-react';
 import AppLogo from './app-logo';
 
 const mainNavItems: NavItem[] = [
@@ -16,32 +16,32 @@ const mainNavItems: NavItem[] = [
     {
         title: 'Autores',
         href: '/autors',
-        icon: LayoutGrid,
+        icon: Sparkles,
     },
     {
         title: 'Categorias',
         href: '/categorias',
-        icon: LayoutGrid,
+        icon: Boxes,
     },
     {
         title: 'Personas',
         href: '/personas',
-        icon: LayoutGrid,
+        icon: Contact,
     },
     {
         title: 'Ubicaciones',
         href: '/ubicacions',
-        icon: LayoutGrid,
+        icon: Locate,
     },
     {
         title: 'Libros',
         href: '/libros',
-        icon: LayoutGrid,
+        icon: BookMarked,
     },
     {
         title: 'Prestamo Libro',
         href: '/prestamoLibros',
-        icon: LayoutGrid,
+        icon: LibrarySquare,
     },
 ];
 

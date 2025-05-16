@@ -9,7 +9,7 @@ class Libro extends Model
 {
     use HasFactory;
     
-    protected $fillable = ['titulo','autor_id','ubicacion_id','categoria_id'];
+    protected $fillable = ['titulo','descripcion','autor_id','ubicacion_id','categoria_id'];
 
     public function prestamo_libros()
     {
